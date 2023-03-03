@@ -41,6 +41,26 @@ h2{
 p{
     font-size: 1rem;
 }
+img{
+    object-fit: cover;
+}
+.card-hebergement, .card-populaire, .card-activite{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    background-color: white;
+}
+
+h4{
+    font-size: 1rem;
+    
+}
+.card-p{
+    font-size: 0.87rem;
+}
+.card-i{
+    font-size: 0.7rem;
+}
 
 
 /***************************************************************************************************************/
@@ -183,7 +203,134 @@ input:focus{
 .element_filtre:hover{
     background-color: var(--second-color);
  }
+ /***************************************************************************************************************/
+/*******************************************  Hebergement marseille  *******************************************************/
+/***************************************************************************************************************/
 
-
-
+.card-hebergement img{
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: solid 5px white;
+    box-sizing: border-box;       
+}
  
+.hebergement{
+    background-color: var(--light-grey-color);
+    min-height: 626px;
+    width: 65%;
+    border-radius: 20px;
+    padding: 10px 40px 0px 40px;
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.hebergement_ligne_1_2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    width: 100%; 
+}
+
+.hebergement_ligne1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  
+}
+.hebergement_ligne2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-hebergement{
+    width: 30%;
+    height: 100%; 
+}
+
+.card-hebergement_content{
+    padding-left: 1rem;
+    padding-bottom: 0.6rem;
+}
+
+.card-hebergement_content h4, .card-hebergement_content p {
+    margin-top: 4px;
+    margin-bottom: 9px;   
+}
+
+.hebergement__affiche-plus{
+    font-size: 1.2rem;
+    font-weight: 700; 
+    padding-bottom: 30px; 
+    padding-top: 30px;    
+}
+ /***************************************************************************************************************/
+/*******************************************  Les plus populaires  *******************************************************/
+/***************************************************************************************************************/
+.populaire{
+    background-color: var(--light-grey-color);
+    min-height: 626px;
+    width: 32%;
+    border-radius: 20px;
+    padding: 10px 40px 30px 40px;
+    box-sizing: border-box; 
+}
+.header-populaire{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.container-card-populaire{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 15px;
+}
+
+.card-populaire a{
+    width: 100%;
+    height: 144px;
+    display: flex;       
+    
+}
+
+.card-populaire img{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    border: solid 5px white;  
+    box-sizing: border-box;
+}
+
+.card-populaire-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+/*definit le style des titre dans les cards de droite*/
+.card-populaire-content h4{
+    margin-top: 8px;
+    margin-bottom: 7px;
+     
+}
+
+
+
+ /***************************************************************************************************************/
+/*******************************************  Section global hebergement  *******************************************************/
+/***************************************************************************************************************/
+
+
+.hebergement-and-populaire{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
