@@ -147,3 +147,43 @@ input:focus{
  /***************************************************************************************************************/
 /*******************************************  Filtres  *******************************************************/
 /***************************************************************************************************************/
+
+/* définit le style des 4 élements de filtre */
+.element_filtre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 50px;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700; 
+  border: solid 1px var(--light-grey-color); 
+  border-radius: 25px;
+}
+
+.filtre_eco_famille{
+    display: flex;
+    gap: 20px;       
+}
+
+.filtre_romantique_animaux{
+    display: flex;
+    gap: 20px;    
+}
+
+.container_filtre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.element_filtre:hover{
+    background-color: var(--second-color);
+ }
+
+
+
+ 
