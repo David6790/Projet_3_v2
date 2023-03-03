@@ -1,7 +1,6 @@
 /************************************************************************************* ************* *************/
 /*******************************************  Généralités *******************************************************/
 /***************************************************************************************************************/
-
 :root{
     --main-color: #0065fc;
     --second-color:#deebff;
@@ -10,16 +9,14 @@
 body {
 	display: flex;
 	justify-content: center;
-    margin: 0px;
-    
+    margin: 0px;   
 }
 .wrapper{ 
     max-width: 1440px;
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
-    margin: auto;   
-    
+    margin: auto;       
 }
 /*defini la couleur de tout les icones FontAwsome*/
 i{
@@ -30,7 +27,6 @@ a{
     text-decoration: none; 
     color: black;   
 }
-
 /* De manière générale implementer cette police dans la page*/
 *{
     font-family: 'raleway', sans-serif; 
@@ -50,10 +46,8 @@ img{
     transition: 0.3s;
     background-color: white;
 }
-
 h4{
-    font-size: 1rem;
-    
+    font-size: 1rem;   
 }
 .card-p{
     font-size: 0.87rem;
@@ -61,20 +55,19 @@ h4{
 .card-i{
     font-size: 0.7rem;
 }
-
-
+h3{
+    font-size: 1.1rem;
+}
 /***************************************************************************************************************/
 /*******************************************  Header *******************************************************/
 /***************************************************************************************************************/
-
 .header-nav{
     width: 100%;
     height: 80px; 
     display: flex;  
     justify-content: space-between; 
     align-items: flex-end; 
-    margin-bottom: 60px;
-     
+    margin-bottom: 60px;    
 }
 .header-nav__logo img{
     width: 70px;
@@ -93,14 +86,12 @@ h4{
     color:var(--main-color);
     border-top: 1px solid var(--main-color);
 }
-
 /***************************************************************************************************************/
 /*******************************************  Recherche *******************************************************/
 /***************************************************************************************************************/
 .recherche{
     width: 100%;
 }
-
 .recherche h2{
     margin-bottom: -0.5rem;
 }
@@ -108,8 +99,7 @@ h4{
     background-color: var(--light-grey-color);
     width: 50px;
 }
-input[type="search"]{
-   
+input[type="search"]{   
     width: 270px;
     border-top: solid 1px var(--light-grey-color);
     border-bottom: solid 1px var(--light-grey-color);
@@ -118,7 +108,6 @@ input[type="search"]{
     line-height: 44px;
     padding-left: 20px;     
  }
-
 input[type="submit"]{
     color: white;
     font-size: large;
@@ -153,7 +142,6 @@ form{
     border-style: none;
     display: none;  
 }
-
 /*définit le style du placeholder*/
 ::placeholder{
     font-size: large;
@@ -163,7 +151,6 @@ form{
 input:focus{
     outline: none;
  }
-
  /***************************************************************************************************************/
 /*******************************************  Filtres  *******************************************************/
 /***************************************************************************************************************/
@@ -181,17 +168,14 @@ input:focus{
   border: solid 1px var(--light-grey-color); 
   border-radius: 25px;
 }
-
 .filtre_eco_famille{
     display: flex;
     gap: 20px;       
 }
-
 .filtre_romantique_animaux{
     display: flex;
     gap: 20px;    
 }
-
 .container_filtre{
     display: flex;
     justify-content: flex-start;
@@ -199,14 +183,12 @@ input:focus{
     gap: 20px;
     margin-top: 40px;
 }
-
 .element_filtre:hover{
     background-color: var(--second-color);
  }
  /***************************************************************************************************************/
 /*******************************************  Hebergement marseille  *******************************************************/
 /***************************************************************************************************************/
-
 .card-hebergement img{
     width: 100%;
     height: 124px;
@@ -214,7 +196,6 @@ input:focus{
     border: solid 5px white;
     box-sizing: border-box;       
 }
- 
 .hebergement{
     background-color: var(--light-grey-color);
     min-height: 626px;
@@ -224,17 +205,14 @@ input:focus{
     box-sizing: border-box; 
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
 }
-
 .hebergement_ligne_1_2{
     display: flex;
     flex-direction: column;
     gap: 30px; 
     width: 100%; 
 }
-
 .hebergement_ligne1{
     display: flex;
     justify-content: space-between;
@@ -249,17 +227,14 @@ input:focus{
     width: 30%;
     height: 100%; 
 }
-
 .card-hebergement_content{
     padding-left: 1rem;
     padding-bottom: 0.6rem;
 }
-
 .card-hebergement_content h4, .card-hebergement_content p {
     margin-top: 4px;
     margin-bottom: 9px;   
 }
-
 .hebergement__affiche-plus{
     font-size: 1.2rem;
     font-weight: 700; 
@@ -291,14 +266,11 @@ input:focus{
     gap: 30px;
     padding-top: 15px;
 }
-
 .card-populaire a{
     width: 100%;
     height: 144px;
-    display: flex;       
-    
+    display: flex;          
 }
-
 .card-populaire img{
     width: 40%;
     height: 100%;
@@ -306,7 +278,6 @@ input:focus{
     border: solid 5px white;  
     box-sizing: border-box;
 }
-
 .card-populaire-content{
     display: flex;
     flex-direction: column;
@@ -318,19 +289,64 @@ input:focus{
 /*definit le style des titre dans les cards de droite*/
 .card-populaire-content h4{
     margin-top: 8px;
-    margin-bottom: 7px;
-     
+    margin-bottom: 7px;     
 }
-
-
-
  /***************************************************************************************************************/
 /*******************************************  Section global hebergement  *******************************************************/
 /***************************************************************************************************************/
-
-
 .hebergement-and-populaire{
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+}
+ /***************************************************************************************************************/
+/*******************************************  Section activité à marseille  *******************************************************/
+/***************************************************************************************************************/
+.activites-marseille{
+    width: 100%;
+    margin-top: 60px;  
+}
+.container_activites{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    gap: 43px;
+    padding-top: 20px;
+    margin-bottom: 61px;
+}
+.card-activite{
+    width: 23%;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+}
+/*definit le style des images contenu dans les cards activités à marseille*/
+.card-activite img{
+    height: 389px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;      
+}
+.nom_activite h5{
+    padding-left: 19px;
+    margin-top: 15px;
+}
+ /***************************************************************************************************************/
+/*******************************************  Section footer  *******************************************************/
+/***************************************************************************************************************/
+.container_footer{
+    display: flex;
+    gap: 180px;
+    align-items:flex-start;
+    height: 225px;
+    width: 100%;
+    background-color: var(--light-grey-color);    
+}
+.list-footer h3{
+    padding-left: 40px;
+}
+/*pour supprimer le padding automatique des element list*/
+.list-footer ul li{
+    list-style: none;
+    padding: 0px 0px 12px 0px;
 }
