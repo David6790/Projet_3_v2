@@ -35,6 +35,12 @@ a{
 *{
     font-family: 'raleway', sans-serif; 
 }
+h2{
+    font-size: 1.4rem;
+}
+p{
+    font-size: 1rem;
+}
 
 
 /***************************************************************************************************************/
@@ -47,6 +53,7 @@ a{
     display: flex;  
     justify-content: space-between; 
     align-items: flex-end; 
+    margin-bottom: 60px;
      
 }
 .header-nav__logo img{
@@ -66,3 +73,77 @@ a{
     color:var(--main-color);
     border-top: 1px solid var(--main-color);
 }
+
+/***************************************************************************************************************/
+/*******************************************  Recherche *******************************************************/
+/***************************************************************************************************************/
+.recherche{
+    width: 100%;
+}
+
+.recherche h2{
+    margin-bottom: -0.5rem;
+}
+.recherche__formulaire label{
+    background-color: var(--light-grey-color);
+    width: 50px;
+}
+input[type="search"]{
+   
+    width: 270px;
+    border-top: solid 1px var(--light-grey-color);
+    border-bottom: solid 1px var(--light-grey-color);
+    border-left-style: none;
+    border-right-style: none;
+    line-height: 44px;
+    padding-left: 20px;     
+ }
+
+input[type="submit"]{
+    color: white;
+    font-size: large;
+    background-color: var(--main-color);
+    height: 49px;
+    width: 140px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;   
+}
+.recherche_formulaire_label{
+    display: flex;
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 50px;
+    background-color: var(--light-grey-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;    
+}
+form{
+    display: flex;
+}
+.btn_recherche_mobile{
+    background-color: var(--main-color);
+    height: 49px;
+    width: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    display: none;  
+}
+
+/*définit le style du placeholder*/
+::placeholder{
+    font-size: large;
+    color: black;
+}
+/* permet d'enlever la bordure extérieure du input search lorsqu'on clique dessus */
+input:focus{
+    outline: none;
+ }
+
+ /***************************************************************************************************************/
+/*******************************************  Filtres  *******************************************************/
+/***************************************************************************************************************/
