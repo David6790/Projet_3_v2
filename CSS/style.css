@@ -453,21 +453,16 @@ input:focus{
         max-width: 767px;
         margin: auto;
         padding-left: 0px;
-        padding-right: 0px;
-        
+        padding-right: 0px;    
     }
-
     /******************************* HEADER-SMARTPHONE *********************************/
     
     .header-nav{
         flex-direction: column;    
         align-items: center;
         padding-bottom: 0px;
-        margin-top: 30px;
-            
+        margin-top: 30px;       
     }
-   
-
     .header-nav__menu{
         width: 100%;
         justify-content: space-evenly;
@@ -478,10 +473,8 @@ input:focus{
         border-top: none;
         border-bottom: solid 1px transparent ;
         padding-top: 40px;
-        padding-bottom: 20px;
-        
+        padding-bottom: 20px;    
     }
-
     .menu-a-highlight:hover{
         border-bottom: solid 3px var(--main-color);
         border-top: none;
@@ -492,13 +485,10 @@ input:focus{
         padding-right: 20px;
         width: 100%;
         box-sizing: border-box;
-    }
-   
+    }   
     input[type="submit"]{
-       display: none; 
-        
+       display: none;    
     }
- 
     .btn_recherche_mobile{
         justify-content: center;
         align-items: center;
@@ -512,8 +502,7 @@ input:focus{
     .filtre{
         padding-left: 20px;
         padding-right: 20px;
-        box-sizing: border-box;
-        
+        box-sizing: border-box;   
     }
     .container_filtre{
         flex-direction: column;
@@ -521,15 +510,12 @@ input:focus{
         width: 100%;
         margin-top: 10px;  
     }
-
     .filtre_eco_famille {  
      width: 100%;
-     
     }
     .filtre_romantique_animaux {
         width: 100%;
     }
-
     .container_filtre a {
         justify-content: flex-start;
         width: 50%;
@@ -548,32 +534,24 @@ input:focus{
     .hebergement-and-populaire{
         flex-direction: column-reverse;
         gap: 0px;     
-    } 
-
-     
-    .populaire{
-        padding-bottom: 0px;
+    }  
+    .populaire{   
         border-radius: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        
+        padding: 30px 20px;  
     }
     .container-card-populaire{
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         height: 100%;
         padding-bottom: 20px;
     }
-
     .card-populaire{
-        width: 90vw;
+        width: 97%;
     }
-
     .card-populaire img{
         width: 45%;
     }
-
     .hebergement{
         background-color: transparent;
         height: 100%;
@@ -582,7 +560,6 @@ input:focus{
         padding-left: 20px;
         padding-right: 20px;  
     }
-
     .hebergement_ligne_1_2{
         gap: 20px;
     }
@@ -594,9 +571,11 @@ input:focus{
         flex-direction: column;
         gap: 20px;
     }
-
     .card-hebergement{
         width: 100%;     
+    }
+    .hebergement__affiche-plus{
+        display: none;
     }
     /******************************* ACTIVITÉ-SMARTPHONE *********************************/
     .activites-marseille{
@@ -611,13 +590,14 @@ input:focus{
     .card-activite{
         width: 100%;
     }
-     /******************************* ACTIVITÉ-SMARTPHONE *********************************/
+    .nom_activite h5{
+        padding-left: 19px;
+        margin-top: 15px;
+    }
+     /******************************* FOOTER-SMARTPHONE *********************************/
      .container_footer{
         flex-direction: column;
-        justify-content: flex-start;
-        
+        justify-content: flex-start;    
         height: 100%;
     }
-
-
   }
