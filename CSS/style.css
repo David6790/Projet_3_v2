@@ -371,12 +371,18 @@ input:focus{
         width: 100%;
         margin: auto;      
     }
-  
-
     .element_filtre{
         padding: 0 20px;
         font-size: 11px;
     }
+    h4{
+        margin-top: 0rem;
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+   
     /*******************************SECTION HEBERGEMENT TABLETTE ********************************/
 
     .hebergement-and-populaire{
@@ -388,29 +394,27 @@ input:focus{
     .hebergement{
         width: 100%;    
     }
-
-
+    .card-hebergement_content{
+        padding-left: 0.5rem;
+        padding-bottom: 0.6rem;
+    }
     .populaire{
         width: 100%;
-        min-height: 100%;
-
+        min-height: 100%;   
     }
     .container-card-populaire{
-        flex-direction: row;
-        justify-content: flex-start;
-        
+        flex-direction: row;    
     }
     .card-populaire{
       width: 33%;
-      padding-right: 2px;
+      padding-right: 10px;   
     }
     .card-populaire img{
         width: 50%;
     }
-    .card-populaire-content h4{
-        margin-top: 1px;
+    .card-populaire-content{
+        padding-top: 2px;
     }
-
     /********************************SECTION ACTIVITÉ -TABLETTE ********************************/
     .card-activite{
         width: 23%;
@@ -428,7 +432,6 @@ input:focus{
     .nom_activite h5{
         margin-top: 10px;
     }
-
     /**********************************SECTION FOOTER -TABLETTE******************************************/
 
     .container_footer{
