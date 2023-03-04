@@ -143,6 +143,7 @@ input[type="submit"]{
 }
 form{
     display: flex;
+    margin-top: 20px;
 }
 .btn_recherche_mobile{
     background-color: var(--main-color);
@@ -199,8 +200,9 @@ input:focus{
  }
  .filtre-info{
     display: flex;
+    align-items: center;
     gap: 10px;
-    margin-top: 43px;
+    margin-top:10px;
  }
  /***************************************************************************************************************/
 /*******************************************  Hebergement marseille  *******************************************************/
@@ -512,7 +514,7 @@ input:focus{
     .filtre{
         padding-left: 20px;
         padding-right: 20px;
-        box-sizing: border-box;    
+        box-sizing: border-box;   
     }
     .container_filtre{
         flex-direction: column;
@@ -535,9 +537,7 @@ input:focus{
         font-size: 11px;
         padding: 0 13px;
     }
-    .filtre-info{
-        align-items: baseline;
-    }
+
     /******************************* HEBERGEMENT-SMARTPHONE *********************************/
 
     /*definit la disposition flex column reverse de la grande section hebergement-and-populaire. Histoire d'avoir populaire avant hebergement*/
@@ -547,7 +547,8 @@ input:focus{
     }  
     .populaire{   
         border-radius: 0px;
-        padding: 30px 20px;  
+        padding: 20px 20px;
+         
     }
     .container-card-populaire{
         flex-direction: column;
