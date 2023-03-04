@@ -466,7 +466,8 @@ input:focus{
         flex-direction: column;    
         align-items: center;
         padding-bottom: 0px;
-        margin-top: 30px;       
+        margin-top: 30px;  
+        margin-bottom: 20px;    
     }
     .header-nav__menu{
         width: 100%;
@@ -490,6 +491,7 @@ input:focus{
         padding-right: 20px;
         width: 100%;
         box-sizing: border-box;
+        margin-top: 40px;
     }   
     input[type="submit"]{
        display: none;    
@@ -507,7 +509,7 @@ input:focus{
     .filtre{
         padding-left: 20px;
         padding-right: 20px;
-        box-sizing: border-box;   
+        box-sizing: border-box;    
     }
     .container_filtre{
         flex-direction: column;
