@@ -1,6 +1,8 @@
 /************************************************************************************* ************* *************/
 /*******************************************  Généralités *******************************************************/
 /***************************************************************************************************************/
+
+/*declaration des couleurs qui seront utilisé dans le site*/
 :root{
     --main-color: #0065fc;
     --second-color:#deebff;
@@ -11,6 +13,7 @@ body {
 	justify-content: center;
     margin: 0px;   
 }
+/*definition de la dimension de la page*/
 .wrapper{ 
     max-width: 1440px;
     width: 100%;
@@ -22,7 +25,7 @@ body {
 i{
     color: var(--main-color);
 }
-/* retirer toutes les decorations sur les liens sur le projet*/
+/* retirer toutes les decorations sur les liens*/
 a{
     text-decoration: none; 
     color: black;   
@@ -31,33 +34,37 @@ a{
 *{
     font-family: 'raleway', sans-serif; 
 }
+/* definition de la taille de police des différents titre et paragraphe*/
+h3{
+    font-size: 1.1rem;
+}
 h2{
     font-size: 1.4rem;
 }
 p{
     font-size: 1rem;
 }
+h4{
+    font-size: 1rem;   
+}
 img{
     object-fit: cover;
 }
+/* declartion des propiétés communes de toutes les cards du projet*/
 .card-hebergement, .card-populaire, .card-activite{
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     background-color: white;
 }
-h4{
-    font-size: 1rem;   
-}
+/*declation des taille de police des textes dans les cards*/
 .card-p{
     font-size: 0.87rem;
 }
 .card-i{
     font-size: 0.7rem;
 }
-h3{
-    font-size: 1.1rem;
-}
+
 /***************************************************************************************************************/
 /*******************************************  Header *******************************************************/
 /***************************************************************************************************************/
@@ -72,6 +79,7 @@ h3{
 .header-nav__logo img{
     width: 70px;
     height: 20px;
+    object-fit: contain;
 }
 .header-nav__menu{
     width: 40%;
@@ -291,7 +299,6 @@ input:focus{
     padding-left: 10px;
     padding-bottom: 10px;
 }
-/*definit le style des titre dans les cards de droite*/
 .card-populaire-content h4{
     margin-top: 8px;
     margin-bottom: 7px;     
@@ -315,17 +322,16 @@ input:focus{
     display: flex;
     width: 100%;
     justify-content:space-between;
-    gap: 43px;
     padding-top: 20px;
     margin-bottom: 61px;
+    gap: 30px;
 }
 .card-activite{
-    width: 23%;
+    width: 22%;
     height: 444px;
     display: flex;
     flex-direction: column;
 }
-/*definit le style des images contenu dans les cards activités à marseille*/
 .card-activite img{
     height: 389px;
     width: 100%;
@@ -417,12 +423,11 @@ input:focus{
     }
     /********************************SECTION ACTIVITÉ -TABLETTE ********************************/
     .card-activite{
-        width: 23%;
+        width: 24%;
         height: 267px;
         display: flex;
         flex-direction: column;
     }
-    /*definit le style des images contenu dans les cards activités à marseille*/
     .card-activite a img{
         height: 211px;
         width: 100%;
@@ -530,7 +535,7 @@ input:focus{
     }
     /******************************* HEBERGEMENT-SMARTPHONE *********************************/
 
-    /*definit la disposition flex column reverse de la grande section hebergement*/
+    /*definit la disposition flex column reverse de la grande section hebergement-and-populaire. Histoire d'avoir populaire avant hebergement*/
     .hebergement-and-populaire{
         flex-direction: column-reverse;
         gap: 0px;     

@@ -27,24 +27,23 @@
                 <section class="recherche">
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
-
                     <form method="post" class="recherche__formulaire"> 
                         <div class="recherche_formulaire_label">
                             <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
                         </div>    
                         <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">      
                         <input type="submit" value="Rechercher">        
-                        <button type="submit" class="btn_recherche_mobile"><i class="fa-solid fa-magnifying-glass"></i></button>  
-                       
+                        <button type="submit" class="btn_recherche_mobile"><!--Creation du bouton pour la version mobile-->
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>     
                     </form>       
                 </section>
-                <section class="filtre">
-                    
+                <section class="filtre">   
                     <div class="container_filtre">
                         <div>
                             <h3>Filtres</h3>
                         </div>
-                        <div class="filtre_eco_famille">
+                        <div class="filtre_eco_famille"><!--Élements filtre regroupés par couple pour anticiper l'intégration mobile-->
                             <a href="#">
                                 <div class="element_filtre">
                                     <div><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
@@ -58,7 +57,7 @@
                                 </div>
                             </a>    
                         </div>
-                        <div class="filtre_romantique_animaux">
+                        <div class="filtre_romantique_animaux"><!--Élements filtre regroupés par couple pour anticiper l'intégration mobile-->
                             <a href="#">
                                 <div class="element_filtre">
                                     <div><i class="fa-solid fa-heart fa-lg"></i></div> 
@@ -81,9 +80,9 @@
                     </div>      
                 </section>   
                 <section class="hebergement-and-populaire">
-                    <div class="hebergement">
+                    <div class="hebergement"><!--div herbegement à marseille-->
                         <h2>Hébergement à Marseille</h2>
-                        <div class="hebergement_ligne_1_2">
+                        <div class="hebergement_ligne_1_2"><!--div qui regroupe les deux lignes de cards-->
                             <div class="hebergement_ligne1">
                                 <article class="card-hebergement">
                                     <a href="#" target="_blank">
@@ -186,11 +185,11 @@
                                 </article>  
                             </div>
                         </div>
-                        <div class="hebergement__affiche-plus">
+                        <div class="hebergement__affiche-plus"><!--le boutton afficher plus en fin de div-->
                             <a href="#">Afficher plus</a> 
                         </div>
                     </div>
-                    <div class="populaire">
+                    <div class="populaire"><!--div les plus populaires à droite-->
                         <div class="header-populaire">
                             <div>
                                 <h2>Les plus populaires</h2>
@@ -288,8 +287,7 @@
                 </section>    
             </main>
             <footer>
-                <div class="container_footer">
-                    
+                <div class="container_footer">    
                     <div class="list-footer"> 
                         <h3 class="titre_filtre">A propos</h3>
                         <div>
