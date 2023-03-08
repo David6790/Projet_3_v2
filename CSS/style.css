@@ -6,7 +6,7 @@
 :root{
     --main-color: #0065fc;
     --second-color:#deebff;
-    --light-grey-color:#f2f2f2;   
+    --tertiary-color:#f2f2f2;   
 }
 *{
     box-sizing: border-box;
@@ -38,18 +38,20 @@ a{
     font-family: 'raleway', sans-serif; 
 }
 /* definition de la taille de police des différents titre et paragraphe*/
-h3{
-    font-size: 1.1rem;
-}
+
 h2{
     font-size: 1.4rem;
 }
-p{
-    font-size: 1rem;
+h3{
+    font-size: 1.1rem;
 }
 h4{
     font-size: 1rem;   
 }
+p{
+    font-size: 1rem;
+}
+
 img{
     object-fit: cover;
 }
@@ -91,7 +93,7 @@ img{
 }
 .header-nav__menu a{
     text-align: center;
-    padding: 50px 55px 15px 55px;
+    padding: 59px 55px 15px 55px;
 }
 .menu-a-highlight:hover{
     color:var(--main-color);
@@ -107,13 +109,13 @@ img{
     margin-bottom: -0.5rem;
 }
 .recherche__formulaire label{
-    background-color: var(--light-grey-color);
+    background-color:var(--tertiary-color);
     width: 50px;
 }
 input[type="search"]{   
     width: 270px;
-    border-top: solid 1px var(--light-grey-color);
-    border-bottom: solid 1px var(--light-grey-color);
+    border-top: solid 1px var(--tertiary-color);
+    border-bottom: solid 1px var(--tertiary-color);
     border-left-style: none;
     border-right-style: none;
     line-height: 44px;
@@ -136,7 +138,7 @@ input[type="submit"]{
     align-items: center;
     height: 49px;
     width: 50px;
-    background-color: var(--light-grey-color);
+    background-color: var(--tertiary-color);
     border-radius: 10px 0px 0px 10px; 
 }
 .recherche_formulaire_label i{
@@ -177,7 +179,7 @@ input:focus{
   gap: 10px;
   font-size: 1.1rem;
   font-weight: 700; 
-  border: solid 1px var(--light-grey-color); 
+  border: solid 1px var(--tertiary-color); 
   border-radius: 25px;
 }
 .filtre_eco_famille{
@@ -204,6 +206,16 @@ input:focus{
     gap: 10px;
     margin-top:10px;
  }
+ .filtre-info div{
+    border: solid 1px var(--tertiary-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: small;
+    padding-top: 3px;
+ }
+
  /***************************************************************************************************************/
 /*******************************************  Hebergement marseille  *******************************************************/
 /***************************************************************************************************************/
@@ -214,7 +226,7 @@ input:focus{
     border: solid 5px white;      
 }
 .hebergement{
-    background-color: var(--light-grey-color);
+    background-color: var(--tertiary-color);
     min-height: 626px;
     width: 65%;
     border-radius: 20px;
@@ -261,7 +273,7 @@ input:focus{
 /*******************************************  Les plus populaires  *******************************************************/
 /***************************************************************************************************************/
 .populaire{
-    background-color: var(--light-grey-color);
+    background-color: var(--tertiary-color);
     min-height: 626px;
     width: 32%;
     border-radius: 20px;
@@ -305,7 +317,7 @@ input:focus{
  /***************************************************************************************************************/
 /*******************************************  Section global hebergement  *******************************************************/
 /***************************************************************************************************************/
-.hebergement-and-populaire{
+#hebergement-and-populaire{
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -313,7 +325,7 @@ input:focus{
  /***************************************************************************************************************/
 /*******************************************  Section activité à marseille  *******************************************************/
 /***************************************************************************************************************/
-.activites-marseille{
+#activites-marseille{
     width: 100%;
     margin-top: 60px;  
 }
@@ -336,7 +348,7 @@ input:focus{
     width: 100%;
     border-radius: 20px 20px 0px 0px; 
 }
-.nom_activite h5{
+.nom_activite h4{
     padding-left: 19px;
     margin-top: 15px;
 }
@@ -349,7 +361,7 @@ input:focus{
     align-items:flex-start;
     height: 225px;
     width: 100%;
-    background-color: var(--light-grey-color);    
+    background-color: var(--tertiary-color);    
 }
 .list-footer h3{
     padding-left: 40px;
@@ -381,6 +393,16 @@ input:focus{
     p{
         font-size: 0.8rem;
     }
+    /*******************************SECTION HEADER TABLETTE ********************************/
+    .menu-a-highlight:hover{
+        color:var(--main-color);
+        border-top: none;
+    }
+    .header-nav__menu a{
+        text-align: center;
+        padding: 59px 0px 20px 55px;
+    }
+
     /*******************************SECTION HEBERGEMENT TABLETTE ********************************/
     .element_filtre{
         padding: 0 20px;
@@ -388,7 +410,7 @@ input:focus{
     }  
     /*******************************SECTION HEBERGEMENT TABLETTE ********************************/
 
-    .hebergement-and-populaire{
+    #hebergement-and-populaire{
         flex-direction: column;
         justify-content: space-between;
         gap: 53px;
@@ -429,7 +451,7 @@ input:focus{
         height: 211px;
         width: 100%;    
     }
-    .nom_activite h5{
+    .nom_activite h4{
         margin-top: 10px;
     }
     /**********************************SECTION FOOTER -TABLETTE******************************************/
@@ -455,7 +477,10 @@ input:focus{
         padding-right: 0px;    
     }
     /******************************* HEADER-SMARTPHONE *********************************/
-    
+    .header-nav__menu a{
+        text-align: center;
+        padding: 59px 55px 15px 55px;
+    }
     .header-nav{
         flex-direction: column;    
         align-items: center;
@@ -528,7 +553,7 @@ input:focus{
     /******************************* HEBERGEMENT-SMARTPHONE *********************************/
 
     /*definit la disposition flex column reverse de la grande section hebergement-and-populaire. Histoire d'avoir populaire avant hebergement*/
-    .hebergement-and-populaire{
+    #hebergement-and-populaire{
         flex-direction: column-reverse;
         gap: 0px;     
     }  
@@ -579,7 +604,7 @@ input:focus{
         display: none;
     }
     /******************************* ACTIVITÉ-SMARTPHONE *********************************/
-    .activites-marseille{
+    #activites-marseille{
         padding-left: 20px;
         padding-right: 20px; 
     }
@@ -590,7 +615,7 @@ input:focus{
     .card-activite{
         width: 100%;
     }
-    .nom_activite h5{
+    .nom_activite h4{
         padding-left: 19px;
         margin-top: 15px;
     }
